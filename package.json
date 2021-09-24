@@ -4,10 +4,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
-  "dependencies": {
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
+
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
