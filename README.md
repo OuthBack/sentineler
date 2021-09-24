@@ -105,7 +105,7 @@ To run the project it is just:
    ```
 2. Import the package
    ```tsx
-   import Sentinel from "sentinel";
+   import Sentineler from "sentineler";
    ```
 3. Call the compoenent and give the callback
 
@@ -120,7 +120,7 @@ To run the project it is just:
    Example:
 
    ```tsx
-   import Sentinel from "sentinel";
+   import Sentineler from "sentineler";
 
    const App = () => {
      return (
