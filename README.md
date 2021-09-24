@@ -17,6 +17,7 @@
 <!-- [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]-->
+
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![site-status]](https://taq-challenge.vercel.app)
 
@@ -26,13 +27,13 @@
   <!--
   <a href="https://github.com/OuthBack/taq-challenge">
     <img src=".github/logo.png" alt="Logo" width="80" height="80">
-  </a> 
+  </a>
   -->
 
   <h3 align="center">Sentineler</h3>
 
   <p align="center">
-    The package is a "sentinel" that trigger a function when is visible. 
+    The package is a "sentinel" that trigger a function when is visible.
     <br />
     <br />
     <a href="https://taq-challenge.vercel.app">View Preview</a>
@@ -72,7 +73,7 @@
 
 ## 📖 About the project
 
-The package is a "sentinel" that trigger a function when is visible. 
+The package is a "sentinel" that trigger a function when is visible.
 
 ### 🔋 Built with:
 
@@ -106,33 +107,41 @@ To run the project it is just:
    ```tsx
    import Sentinel from "sentinel";
    ```
-3. Call the compoenent and give the callback 
+3. Call the compoenent and give the callback
+
    ```tsx
-   <Sentinel callback={() => {console.log('test')}} />
+   <Sentinel
+     callback={() => {
+       console.log("test");
+     }}
+   />
    ```
-Example:
+
+   Example:
+
    ```tsx
-    import Sentinel from "sentinel";
+   import Sentinel from "sentinel";
 
-    const App = () => {
-      return (
-        <Sentinel callback={() => {console.log('test')}} />
-      );
-    }
+   const App = () => {
+     return (
+       <Sentinel
+         callback={() => {
+           console.log("test");
+         }}
+       />
+     );
+   };
 
-    export default App;
-
+   export default App;
    ```
 
 <!-- Site Preview -->
 
+### :bone: Props
 
-### :bone: Props 
-
-| Prop                  | Type             | Default    | Description                                                                                                                                                      |
-| --------------------- | ---------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `callback` (required) | Function         | –          | Callback function to run when the Sentineler is visible
-
+| Prop                  | Type     | Default | Description                                             |
+| --------------------- | -------- | ------- | ------------------------------------------------------- |
+| `callback` (required) | Function | –       | Callback function to run when the Sentineler is visible |
 
 ## 🖥️ Site Preview
 
@@ -142,6 +151,7 @@ I made this infinite scroll using this component.
 <br/>
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://taq-challenge.vercel.app) -->
+
 See the Site Preview:
 https://taq-challenge.vercel.app
 
@@ -183,7 +193,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Henrique Figueiredo - riquessan@gmail.com
 
-Project Linl: [https://github.com/OuthBack/sentineler](https://github.com/OuthBack/sentineler)
+Project Link: [https://github.com/OuthBack/sentineler](https://github.com/OuthBack/sentineler)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

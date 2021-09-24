@@ -62,5 +62,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://github.com/OuthBack/sentineler",
+  "keywords": [
+    "sentinel", "sentineler",
+    "infinite", "scroll",
+    "intersection", "observer",
+    "infinite-scroll", "visible",
+    "component"
+  ]
+
 }
