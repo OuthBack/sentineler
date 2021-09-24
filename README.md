@@ -1,46 +1,204 @@
-# Getting Started with Create React App
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-## Available Scripts
+<!-- [![Forks][forks-shield]][forks-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]-->
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![site-status]](https://taq-challenge.vercel.app)
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <!--
+  <a href="https://github.com/OuthBack/taq-challenge">
+    <img src=".github/logo.png" alt="Logo" width="80" height="80">
+  </a> 
+  -->
 
-### `yarn start`
+  <h3 align="center">Sentineler</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+    The package is a "sentinel" that trigger a function when is visible. 
+    <br />
+    <br />
+    <a href="https://taq-challenge.vercel.app">View Preview</a>
+    ·
+    <a href="https://github.com/OuthBack/taq-challenge/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/OuthBack/taq-challenge/issues">Require Feature</a>
+  </p>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Content Tabel</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About the project</a>
+      <ul>
+        <li><a href="#built-with">Built with:</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Requirements</a></li>
+        <li><a href="#installation">Instalation</a></li>
+        <li><a href="#props">Instalation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Site Preview</a></li>
+    <li><a href="#license">Licence</a></li>
+    <li><a href="#contact">Contact</a></li>
 
-### `yarn test`
+  </ol>
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
 
-### `yarn build`
+## 📖 About the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The package is a "sentinel" that trigger a function when is visible. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔋 Built with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React.js](https://pt-br.reactjs.org)
+- [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 
-### `yarn eject`
+<!-- GETTING STARTED -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## :scroll: Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the project it is just:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### :warning: Requirements
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-## Learn More
+### :gear: Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Install the package
+   ```sh
+   npm install sentineler
+   ```
+   ou
+   ```sh
+   yarn add sentineler
+   ```
+2. Import the package
+   ```tsx
+   import Sentinel from "sentinel";
+   ```
+3. Call the compoenent and give the callback 
+   ```tsx
+   <Sentinel callback={() => {console.log('test')}} />
+   ```
+Example:
+   ```tsx
+    import Sentinel from "sentinel";
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    const App = () => {
+      return (
+        <Sentinel callback={() => {console.log('test')}} />
+      );
+    }
+
+    export default App;
+
+   ```
+
+<!-- Site Preview -->
+
+
+## :bone: Props 
+
+| Prop                  | Type             | Default    | Description                                                                                                                                                      |
+| --------------------- | ---------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `callback` (required) | Function         | –          | Callback function to run when the Sentineler is visible
+
+
+## 🖥️ Site Preview
+
+[![site-status]](https://taq-challenge.vercel.app)
+
+I made this infinite scroll using this component.
+<br/>
+
+<!-- [![Product Name Screen Shot][product-screenshot]](https://taq-challenge.vercel.app) -->
+See the Site Preview:
+https://taq-challenge.vercel.app
+
+## :dart: Test
+
+To contribute to the project you just need:
+
+1. Clone the repository
+   ```sh
+   git clone https://github.com/OuthBack/sentineler
+   ```
+2. Install the packages
+   ```sh
+   npm install
+   ```
+   ou
+   ```sh
+   yarn
+   ```
+3. For now you can create a link, but soon I will create a react application
+   ```
+   yarn link
+   ```
+4. In another project that you are using react
+   ```sh
+   yarn link "sentineler"
+   ```
+5. Now it is just follow the example
+
+<!-- LICENÇA -->
+
+## :pencil: Licence
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## :telephone_receiver: Contact
+
+Henrique Figueiredo - riquessan@gmail.com
+
+Project Linl: [https://github.com/OuthBack/sentineler](https://github.com/OuthBack/sentineler)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/OuthBack/sentineler/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/OuthBack/sentineler/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/OuthBack/sentineler.svg?style=for-the-badge
+[forks-url]: https://github.com/OuthBack/sentineler/network/members
+[stars-shield]: https://img.shields.io/github/stars/OuthBack/sentineler.svg?style=for-the-badge
+[stars-url]: https://github.com/OuthBack/sentineler/stargazers
+[issues-shield]: https://img.shields.io/github/issues/OuthBack/sentineler.svg?style=for-the-badge
+[issues-url]: https://github.com/OuthBack/sentineler/issues
+[license-shield]: https://img.shields.io/github/license/OuthBack/sentineler.svg?style=for-the-badge
+[license-url]: https://github.com/OuthBack/sentineler/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/henrique-figueiredo-0396921a7/
+[product-screenshot]: .github/screenshot.png
+[site-status]: https://img.shields.io/website/https/vercel.com/outhback/sentineler/path/to/page.html.svg.?style=for-the-badge
