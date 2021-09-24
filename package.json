@@ -1,6 +1,6 @@
 {
   "name": "sentineler",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
@@ -65,11 +65,14 @@
   },
   "homepage": "https://github.com/OuthBack/sentineler",
   "keywords": [
-    "sentinel", "sentineler",
-    "infinite", "scroll",
-    "intersection", "observer",
-    "infinite-scroll", "visible",
+    "sentinel",
+    "sentineler",
+    "infinite",
+    "scroll",
+    "intersection",
+    "observer",
+    "infinite-scroll",
+    "visible",
     "component"
   ]
-
 }
